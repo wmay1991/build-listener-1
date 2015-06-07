@@ -1,3 +1,5 @@
+var BoardController = require('../app/boardController');
+
 describe("BoardController", function() {
 
   var boardController;
@@ -23,7 +25,7 @@ describe("BoardController", function() {
     });
 
     it("will write the all ON state to the controller board when unknown", function() {
-      var mySpy = spyOn(BoardController.prototype, 'writeBoardState').and.callThrough(); 
+      var mySpy = spyOn(BoardController.prototype, 'writeBoardState').andCallThrough(); 
       boardController = new BoardController(); 
       var buildStatus = 'unknown';
       var boardState = boardController.setBoardState(buildStatus);

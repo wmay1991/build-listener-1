@@ -1,3 +1,5 @@
+ var BuildState = require('../app/buildState');
+
 describe("BuildState", function() {
 
   describe("determineStatus()", function() {

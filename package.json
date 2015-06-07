@@ -1,0 +1,22 @@
+{
+  "name": "build-listener",
+  "version": "0.0.1",
+  "description": "A simple http listener to set the status of a build for a radiator",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DonAbney/build-listener.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DonAbney/build-listener/issues"
+  },
+  "homepage": "https://github.com/DonAbney/build-listener",
+  "dependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
