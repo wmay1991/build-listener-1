@@ -15,6 +15,13 @@ BuildListener.prototype.createServer = function(serverName, serverVersion) {
     server.use(restify.acceptParser(server.acceptable));
     server.use(restify.queryParser());
     server.use(restify.bodyParser());
+
+    server.get('/', function(req, res, next) {
+	res.send(405);
+	return next();
+    });
+
+    server.listen(8081);
 }
 
 BuildListener.prototype.name = function() {
