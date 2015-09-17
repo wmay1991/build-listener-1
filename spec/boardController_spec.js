@@ -87,4 +87,30 @@ describe("BoardController", function() {
       expect(mySpy).toHaveBeenCalledWith(1);
     });
   });
+    describe("getBoardState- value for pin 13 for pass"), function()
+  {
+	  boardController = new BoardController(); 
+      var buildStatus = 'pass';
+      var boardState = boardController.setBoardState(buildStatus);
+	  var getBoardSt = boardController.getBoardState();
+	  expect(getBoardSt.boardState["pin13"].value).toEqual(1);  
+  });
+  
+  describe("getBoardState - value for pin 12 for pass"), function()
+  {
+	  boardController = new BoardController(); 
+      var buildStatus = 'pass';
+      var boardState = boardController.setBoardState(buildStatus);
+	  var getBoardSt = boardController.getBoardState();
+	  expect(getBoardSt.boardState["pin12"].value).toEqual(0);  
+  });
+  
+  describe("getBoardState - value for pin 11 for pass"), function()
+  {
+	  boardController = new BoardController(); 
+      var buildStatus = 'pass';
+      var boardState = boardController.setBoardState(buildStatus);
+	  var getBoardSt = boardController.getBoardState();
+	  expect(getBoardSt.boardState["pin11"].value).toEqual(0);  
+  });
 });
